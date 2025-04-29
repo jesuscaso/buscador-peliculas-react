@@ -7,7 +7,7 @@ function App() {
   const [cargando, setCargando] = useState(true);
 
   useEffect(() => {
-    fetch('/peliculas.json')
+    fetch('https://canodelacuadra.github.io/buscador-peliculas-react/peliculas.json')
       .then(response => response.json())
       .then(data => {
         setPeliculas(data);
